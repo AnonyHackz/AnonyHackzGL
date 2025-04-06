@@ -45,7 +45,7 @@ apt-get -y install php unzip git wget
 ## Installing (Kali Linux/Termux):
 
 ```
-git clone https://github.com//hound
+git clone https://github.com/AnonyHackz/AnonyHackzGeolocation.git
 cd AnonyHackzGeolocation
 bash anonyhackz.sh
 ```
@@ -54,6 +54,6 @@ Version: 0.1: Remove Ngrok and update cloudflared tunnel
 
 
 
-### For More Video subcribe <a href="www.youtube.com/@AnonyHackz741 ">AnonyHackz741 YouTube Channel</a>
+### For More Video subcribe <a href="https://youtube.com/@anonyhackz741 ">AnonyHackz741 YouTube Channel</a>
 <p>AnonyHackz is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
 credit - Chatbot template : Vijay Veerappa
