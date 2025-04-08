@@ -30,9 +30,7 @@ AnonyHackz is a easiest tool for information gathering and capture exact GPS coo
   <li>Kali Linux</li>
   <li>Windows(WSL)</li>
   <li>Termux</li>
-  <li>MacOS</li>
   <li>Ubuntu</li>
-  <li>Parrot Sec OS</li>
 </ul>
 
 ## Installing and requirements
