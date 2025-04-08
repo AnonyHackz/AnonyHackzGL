@@ -1,0 +1,32 @@
+AnonyHackz - Information Gathering Report
+------------------------------------
+
+Device Information
+----------------------------
+User Agent: Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.135 Mobile Safari/537.36 
+Platform: Linux aarch64 
+Cookies Enabled: true
+Browser Language: en
+Browser Name: Netscape
+Browser CodeName: Mozilla
+RAM: 8
+CPU Cores: 8
+Screen Width: 432
+Screen Height: 960
+Local Time: 7:56:13 PM
+RefUrl: 
+OS CPU: undefined
+-------------------------
+
+Target IP Detail
+----------------
+IP: 86.99.36.228
+---------------
+
+GPS Lat Long Information
+-----------------------
+Latitude: 25.2601743
+Longitude: 55.287754
+Map Location:  https://www.google.com/maps/place/25.2601743,55.287754
+Google Earth:  https://earth.google.com/web/search/25.2601743,55.287754
+------------------

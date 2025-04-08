@@ -17,7 +17,7 @@ printf   '       ██   ██ ██     ███  ██████  █�
 printf '\e[1;31m       ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n'                                                                                
 printf " \e[1;93m      AnonyHackz Ver 0.1 - by Vijay Veerappa [AnonyHackz]\e[0m \n"
 printf " \e[1;92m      https://anonyhackz.github.io | https://youtube.com/@anonyhackz741 \e[0m \n"
-printf "\e[1;90m AnonyHackz is a easiest tool for information gathering and capture GPS coordinates.\e[0m \n"
+printf "\e[1;90m       AnonyHackz is a easiest tool for information gathering and capture GPS coordinates.\e[0m \n"
 printf "\n"
 }
 
