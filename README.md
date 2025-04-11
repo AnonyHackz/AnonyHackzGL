@@ -1,4 +1,4 @@
-# AnonyHackz 🐶
+# AnonyHackz 
 AnonyHackz is a easiest tool for information gathering and capture exact GPS coordinates
 
 
@@ -52,6 +52,6 @@ Version: 0.1: Remove Ngrok and update cloudflared tunnel
 
 
 
-### For More Video subcribe <a href="https://youtube.com/@anonyhackz741 ">AnonyHackz741 YouTube Channel</a>
+### For video referance subcribe <a href="https://youtube.com/@anonyhackz741 ">AnonyHackz741 YouTube Channel</a>
 <p>AnonyHackz is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
 credit - Chatbot template : Vijay Veerappa
