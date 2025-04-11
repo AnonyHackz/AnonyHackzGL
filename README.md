@@ -1,9 +1,9 @@
-# AnonyHackz 
-AnonyHackz is a easiest tool for information gathering and capture exact GPS coordinates
+# AnonyHackzGL 
+AnonyHackzGL simplifies info gathering by accurately capturing GPS coordinates and device data
 
 
-# What is AnonyHackz?
-<p>AnonyHackz is a utility that enables remote retrieval of a target device’s GPS coordinates via a PHP-based server. It also collects basic system and ISP-related information, making it a useful asset for reconnaissance and information gathering.</p>
+# What is AnonyHackzGL?
+<p>AnonyHackzGL is a utility that enables remote retrieval of a target device’s GPS coordinates via a PHP-based server. It also collects basic system and ISP-related information, making it a useful asset for reconnaissance and information gathering.</p>
 <ul>
   <li>Longitude</li>
   <li>Latitude</li>
@@ -53,5 +53,5 @@ Version: 0.1: Remove Ngrok and update cloudflared tunnel
 
 
 ### For video referance subcribe <a href="https://youtube.com/@anonyhackz741 ">AnonyHackz741 YouTube Channel</a>
-<p>AnonyHackz is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
+<p>AnonyHackzGL is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
 credit - Chatbot template : Vijay Veerappa
