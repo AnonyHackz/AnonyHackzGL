@@ -18,11 +18,11 @@ AnonyHackzGL simplifies info gathering by accurately capturing GPS coordinates a
 </ul>
 
 ## Features
-  <p>The tool offers a wide range of features and functionality, including:</p>
+  <p>AnonyHackzGL offers a comprehensive set of features designed to simplify information gathering, including:</p>
     <ul>
-  <li>Capture Exact GPS Location</li>
-  <li>Automated Data Collection</li>
-   <li>User-friendly Interface</li>
+  <li>Precise GPS Location Tracking</li>
+  <li>Automated Information Collection</li>
+   <li>Intuitive, User-Friendly Interface</li>
 </ul>
 
 ## This Tool Tested On :
@@ -34,7 +34,7 @@ AnonyHackzGL simplifies info gathering by accurately capturing GPS coordinates a
 </ul>
 
 ## Installing and requirements
-<p>This tool require PHP for webserver, wget & unzip for download and extract cloudflare. First run following command on your terminal</p>
+<p>This tool requires PHP for the web server, and wget & unzip to download and extract Cloudflare files. To begin, run the following command in your terminal</p>
 
 ```
 apt-get -y install php unzip git wget
@@ -53,5 +53,5 @@ Version: 0.1: Remove Ngrok and update cloudflared tunnel
 
 
 ### For video referance subcribe <a href="https://youtube.com/@anonyhackz741 ">AnonyHackz741 YouTube Channel</a>
-<p>AnonyHackzGL is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
+<p>AnonyHackzGL is developed strictly for ethical hacking and penetration testing purposes. The creators are not responsible for any misuse or illegal activities conducted with this tool.</p>
 credit - Chatbot template : Vijay Veerappa
