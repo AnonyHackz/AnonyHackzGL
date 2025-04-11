@@ -3,7 +3,7 @@ AnonyHackz is a easiest tool for information gathering and capture exact GPS coo
 
 
 # What is AnonyHackz?
-<p>AnonyHackz is a tool that can remotely capture the exact GPS coordinates of a target device using a PHP server, and can also grab basic information about the system and ISP. This tool can be very helpful in information gathering. you can get following information of the target device</p>
+<p>AnonyHackz is a utility that enables remote retrieval of a target device’s GPS coordinates via a PHP-based server. It also collects basic system and ISP-related information, making it a useful asset for reconnaissance and information gathering.</p>
 <ul>
   <li>Longitude</li>
   <li>Latitude</li>
