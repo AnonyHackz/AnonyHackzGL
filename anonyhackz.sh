@@ -21,6 +21,33 @@ printf "\e[1;90m       AnonyHackz is a easiest tool for information gathering an
 printf "\n"
 }
 
+
+
+macspoofer(){
+
+	default_option="Y"
+	read -p $'\n\e[1;93m Do you want to change MAC address [Default is Y] [Y/N]: \e[0m' option
+	option_result="${option:-${default_option}}"
+	if [[ $option_result == "Y" || $option_result == "y" || $option_result == "Yes" || $option_result == "yes" ]]; then
+		sleep 2
+		printf "Directing to script \n"
+		sleep 2
+		sudo chmod +x ./AHMacSpoofer/analyze.sh
+		bash ./AHMacSpoofer/analyze.sh
+	
+	else
+	local_server
+	sleep 1
+	fi
+
+}
+
+
+
+
+
+
+
 dependencies() {
 command -v php > /dev/null 2>&1 || { echo >&2 "I require php but it's not installed. Install it. Aborting."; exit 1; } 
 
@@ -139,6 +166,8 @@ fi
 }
 
 banner
+sleep 2
+macspoofer
 dependencies
 anonyHackz
 
