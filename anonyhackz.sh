@@ -26,18 +26,42 @@ printf "\n"
 macspoofer(){
 
 	default_option="Y"
-	read -p $'\n\e[1;93m Do you want to change MAC address [Default is Y] [Y/N]: \e[0m' option
+	read -p $'\n\e[1;93m Do you want to change MAC address for your privacy [Default is Y] [Y/N]: \e[0m' option
 	option_result="${option:-${default_option}}"
 	if [[ $option_result == "Y" || $option_result == "y" || $option_result == "Yes" || $option_result == "yes" ]]; then
 		sleep 2
-		printf "Directing to script \n"
+		printf " Directing to script \n"
 		sleep 2
 		sudo chmod +x ./AHMacSpoofer/analyze.sh
 		bash ./AHMacSpoofer/analyze.sh
 	
 	else
-	local_server
-	sleep 1
+		sleep 2
+		printf "\n"
+		get_mac() {
+		    local interface=$1
+		    mac_address=$(ip link show "$interface" | grep -oP 'ether \K[[:xdigit:]:]{17}')
+		    sleep 2
+		    echo " Using existing MAC address for $interface is: $mac_address"
+		    }
+
+		# Automatically detect the active interface (either Ethernet or Wireless)
+		active_interface=$(ip link show | grep -E 'state UP' | awk -F': ' '{print $2}' | awk '{print $1}' | head -n 1)
+
+		# Check if an active interface is found
+		if [ -z "$active_interface" ]; then
+		    echo " ❌ No active network interface found."
+		    exit 1
+		fi
+
+		# Get and display the MAC address for the active interface
+		get_mac "$active_interface"
+		
+		
+		
+		
+		
+	sleep 3
 	fi
 
 }
