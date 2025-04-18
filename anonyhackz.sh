@@ -1,5 +1,5 @@
 #!/bin/bash
-# AnonyHackz v 0.1
+# AnonyHackz v 0.1.1
 # Powered by AnonyHackz
 # visit https://youtube.com/@anonyhackz741
 
@@ -7,6 +7,15 @@ __version__="V0.1.1"
 
 ## Directories
 BASE_DIR=$(realpath "$(dirname "$BASH_SOURCE")")
+
+
+
+## Reset terminal colors
+reset_color() {
+	tput sgr0   # reset attributes
+	tput op     # reset color
+	return
+}
 
 ## ANSI colors (FG & BG)
 RED="$(printf '\033[31m')"  GREEN="$(printf '\033[32m')"  ORANGE="$(printf '\033[33m')"  BLUE="$(printf '\033[34m')"
