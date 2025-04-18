@@ -3,7 +3,7 @@
 # Powered by AnonyHackz
 # visit https://youtube.com/@anonyhackz741
 
-
+__version__="V0.1.0"
 
 
 ## ANSI colors (FG & BG)
@@ -31,6 +31,49 @@ cat <<- EOF
 	EOF
 }
 
+
+
+
+# Check for a newer release
+check_update(){
+	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Checking for update : "
+	relase_url='https://api.github.com/repos/AnonyHackz/AnonyHackzGL/releases/latest'
+	new_version=$(curl -s "${relase_url}" | grep '"tag_name":' | awk -F\" '{print $4}')
+	tarball_url="https://github.com/AnonyHackz/AnonyHackzGL/archive/refs/tags/${new_version}.tar.gz"
+	echo -e "${CYAN}Local version: $__version__, Remote version: $new_version${WHITE}"
+
+
+	if [[ $new_version != $__version__ ]]; then
+		echo -ne "${ORANGE}update found\n"${WHITE}
+		sleep 2
+		echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${ORANGE} Downloading Update..."
+		pushd "$HOME" > /dev/null 2>&1
+		curl --silent --insecure --fail --retry-connrefused \
+		--retry 3 --retry-delay 2 --location --output ".AnonyHackzGL.tar.gz" "${tarball_url}"
+
+		if [[ -e ".AnonyHackzGL.tar.gz" ]]; then
+			tar -xf .AnonyHackzGL.tar.gz -C "$BASE_DIR" --strip-components 1 > /dev/null 2>&1
+			[ $? -ne 0 ] && { echo -e "\n\n${RED}[${WHITE}!${RED}]${RED} Error occured while extracting."; reset_color; exit 1; }
+			rm -f .AnonyHackzGL.tar.gz
+			popd > /dev/null 2>&1
+			{ sleep 3; clear; banner; }
+			echo -ne "\n${GREEN}[${WHITE}+${GREEN}] Successfully updated! Run anonyhackz again\n\n"${WHITE}
+			{ reset_color ; exit 1; }
+		else
+			echo -e "\n${RED}[${WHITE}!${RED}]${RED} Error occured while downloading."
+			{ reset_color; exit 1; }
+		fi
+	else
+		echo -ne "${GREEN}up to date\n${WHITE}" ; sleep .5
+	fi
+}
+
+## Check Internet Status
+check_status() {
+	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Internet Status : "
+	timeout 3s curl -fIs "https://api.github.com" > /dev/null
+	[ $? -eq 0 ] && echo -e "${GREEN}Online${WHITE}" && check_update || echo -e "${RED}Offline${WHITE}"
+}
                             
 
 
@@ -202,6 +245,7 @@ fi
 
 banner
 sleep 2
+check_status
 macspoofer
 dependencies
 anonyHackz
